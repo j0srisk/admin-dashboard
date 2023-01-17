@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(../fonts/Norse-Bold.otf);
+  }
+
+:root{
+    --main-color: #1992D4;
+    --secondary-color: #F0B42A;
+    --background-color: #E2E8F1;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 0px;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.logo{
+    font-size: 2.5rem;
+    display: flex;
+    gap: 20px;
+}
+
+#logo-img {
+    height: 50px;
+}
+
+.sidebar {
+    grid-row: 1 / -1;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.sidebar a > * {
+    padding-right: 20px;
+}
+
+.sidebar > a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+a:nth-child(8) {
+    margin-top: 40px;
+}
+
+.logo {
+    outline: white solid 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+    font-family: 'Norse-Bold';
+}
+
+.header {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 6px 20px;
+    column-gap: 20px;
+    row-gap: 5px;
+}
+
+.header > * {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    justify-content: space-between;
+}
+
+.header-icon {
+    height: 20px;
+    width: 20px;
+}
+
+input {
+    width: 100%;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--background-color);
+    height: 40px;
+    padding-left: 20px;
+}
+
+input:focus {
+    border: none;
+    outline: 2px solid var(--main-color);
+}
+
+.avatar-small {
+    height: 40px;
+    border-radius: 100%;
+    outline: 2px solid var(--secondary-color);
+}
+
+.account {
+    justify-content: end;
+    font-size: 1.25rem;
+    font-weight: 500;
+    gap: 60px;
+}
+
+.avatar-medium {
+    height: 50px;
+    border-radius: 100%;
+}
+
+.welcome-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.welcome-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.action-buttons{
+    justify-content: space-between;
+}
+
+button {
+    color: white;
+    background-color: var(--main-color);
+    border: 0px;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--background-color);
+    gap: 20px;
+    padding: 20px;
+}
+
+#projects {
+    grid-row: 1 / -1;
+}
+
+div.sidebar > *{
+    display: flex;
+    align-items: center;
+}
+
+div.content > *{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.content-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    height: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+    border-left: var(--secondary-color) solid 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.project-icons {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.project-icons > * {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border: 1px black s;
+    border-radius: 5px;
+    background-color: var(--background-color);
+}
+
+#announcements-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcement-title, .user-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.announcement-description, .user-title {
+    font-size: .85rem;
+    font-weight: 400;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color:  var(--background-color)
+}
+
+#trending-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
